@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            img{
+                height: 300px;
+                width: 600px;
+                margin: 200px 400px;
+                border: 3px solid gray;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../boot/img/20231027.jpg" alt="">
+        <script>
+            var a=["20231027","image","learning","m1.jpeg","net1"]
+            
+            var i=0
+            function d(){
+                var ig = document.querySelector("img")
+                ig.src="../boot/img/"+a[i]+".jpg"
+                i++
+                if(i==5){
+                i=0
+            }
+            }
+            
+            setInterval(d,1000)
+        </script>
+    </body>
+</html>
